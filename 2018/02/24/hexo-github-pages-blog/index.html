@@ -153,7 +153,7 @@
 </ol>
 <p>我一直不太喜欢在cmd中操作各种命令，所以挑了这个比较好使的Git Bash, 我的是windows环境，所以下载windows版本并安装就可以了。</p>
 <ul>
-<li>[下载地址][1]</li>
+<li>[下载地址]（<a href="https://gitforwindows.org/）" target="_blank" rel="noopener">https://gitforwindows.org/）</a></li>
 <li>安装步骤：双击下载好的exe文件，一路next就好啦</li>
 <li>安装好后，打开gitbash，查看版本：<ul>
 <li>命令：<code>git version</code> (写这篇博客的时候最新版本：2.12.6)<br><img src="http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotnzdervtj207v01dgle.jpg" alt="git -v"></li>
@@ -166,7 +166,7 @@
 </ol>
 <p>Hexo是基于nodeJS环境的静态博客，里面的npm工具很有用啊，所以还是老老实实把这玩意儿装了吧</p>
 <ul>
-<li>[下载地址]<a href="说明：LTS为长期支持版，Current为当前最新版">3</a></li>
+<li>[下载地址]（<a href="https://nodejs.org/en/)(说明：LTS为长期支持版，Current为当前最新版)" target="_blank" rel="noopener">https://nodejs.org/en/)(说明：LTS为长期支持版，Current为当前最新版)</a></li>
 <li>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 <code>Add to PATH</code> ,这样你就不用自己去配置电脑上环境变量了，装完在按 <code>win + r</code> 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。</li>
 <li>查看版本：<ul>
 <li>命令：<code>node -v</code><br>![node -v]（<a href="http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto19wrooj207n010mwx.jpg" target="_blank" rel="noopener">http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto19wrooj207n010mwx.jpg</a>)</li>
@@ -200,14 +200,11 @@
 <li>搭桥到github</li>
 </ol>
 <ul>
-<li><p>没账号的创建账号，有账号的看下面。</p>
-<ul>
+<li>没账号的创建账号，有账号的看下面。<ul>
 <li>创建一个repo，名称为<code>yourname.github.io</code>, 其中yourname是你的github名称，按照这个规则创建才有用哦，如下：<br><img src="http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotoch7r12j20bi06v0sp.jpg" alt="repo"><br><img src="http://wx2.sinaimg.cn/mw690/a9983fa7ly1fotochvax7j20op0gljsk.jpg" alt="yourname"></li>
-<li><p>回到gitbash中，配置github账户信息（YourName和YourEail都替换成你自己GitHub账户的信息）：</p>
-</li>
-<li><p>创建SSH<br> 在gitbash中输入：<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code>，生成ssh。然后按下图的方式找到<code>id_rsa.pub</code>文件的内容。<br>![<a href="http://wx4.sinaimg.cn/mw690/a9983fa7ly1fotojl94cxj20ir05h0sr.jpg][11]" target="_blank" rel="noopener">http://wx4.sinaimg.cn/mw690/a9983fa7ly1fotojl94cxj20ir05h0sr.jpg][11]</a></p>
-</li>
-<li>将上面获取的ssh放到github中：<br>![<a href="http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotojlpzbcj206e094q2u.jpg][12]" target="_blank" rel="noopener">http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotojlpzbcj206e094q2u.jpg][12]</a><br>![<a href="http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotojm4yjzj20so0avmxg.jpg][13]" target="_blank" rel="noopener">http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotojm4yjzj20so0avmxg.jpg][13]</a><br>添加一个 <code>New SSH key</code> ，title随便取，key就填刚刚那一段。</li>
+<li>回到gitbash中，配置github账户信息（YourName和YourEail都替换成你自己GitHub账户的信息）：<br><img src="http://wx4.sinaimg.cn/mw690/a9983fa7ly1fotofvtf7cj20af02f0sk.jpg" alt="user_name"><br><img src="http://wx1.sinaimg.cn/mw690/a9983fa7ly1fotoga7z7tj20aj02a0sk.jpg" alt="usere_mail"></li>
+<li>创建SSH<br> 在gitbash中输入：<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code>，生成ssh。然后按下图的方式找到<code>id_rsa.pub</code>文件的内容。<br><img src="http://wx4.sinaimg.cn/mw690/a9983fa7ly1fotojl94cxj20ir05h0sr.jpg" alt="ssh"></li>
+<li>将上面获取的ssh放到github中：<br><img src="http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotojlpzbcj206e094q2u.jpg" alt="github"><br><img src="http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotojm4yjzj20so0avmxg.jpg" alt="github_ssh"><br>添加一个 <code>New SSH key</code> ，title随便取，key就填刚刚那一段。</li>
 <li>在gitbash中验证是否添加成功：<code>ssh -T git@github.com</code></li>
 <li>完成下一步你就成功啦！</li>
 </ul>
@@ -237,7 +234,7 @@
 <li>执行命令(建议每次都按照如下步骤部署)：</li>
 </ul>
 <figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo <span class="keyword">generate</span></span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
-<p>  注意deploy的过程中要输入你的username及passward。如下：<br>![<a href="http://wx1.sinaimg.cn/mw690/a9983fa7ly1fotojms2s2j20i103wwee.jpg][14]" target="_blank" rel="noopener">http://wx1.sinaimg.cn/mw690/a9983fa7ly1fotojms2s2j20i103wwee.jpg][14]</a></p>
+<p>  注意deploy的过程中要输入你的username及passward。如下：<br><img src="http://wx1.sinaimg.cn/mw690/a9983fa7ly1fotojms2s2j20i103wwee.jpg" alt="deploy"></p>
 <ul>
 <li>在浏览器中输入<code>http://yourgithubname.github.io</code>就可以看到你的个人博客啦，是不是很兴奋！</li>
 <li>感觉gitbash中东西太多的时候输入<code>clear</code>命令清空。</li>
@@ -247,10 +244,10 @@
 <li>修改及配置主题</li>
 </ol>
 <ul>
-<li>hexo初始化之后默认的主题是<code>landscape</code> , 然后你可以去[这个地址][15]里面找到你想要的主题。在github中搜索你要的主题名称，里面都会有该主题的如何使用的介绍，按着来就好了，反正就是改改改！我选的是<code>hueman</code>,看起来挺不错，至少是我喜欢的类型。<br>![<a href="http://wx4.sinaimg.cn/mw690/a9983fa7ly1fototjt0u3j206n02wdfm.jpg][16]" target="_blank" rel="noopener">http://wx4.sinaimg.cn/mw690/a9983fa7ly1fototjt0u3j206n02wdfm.jpg][16]</a></li>
+<li>hexo初始化之后默认的主题是<code>landscape</code> , 然后你可以去[这个地址][15]里面找到你想要的主题。在github中搜索你要的主题名称，里面都会有该主题的如何使用的介绍，按着来就好了，反正就是改改改！我选的是<code>hueman</code>,看起来挺不错，至少是我喜欢的类型。<br><img src="http://wx4.sinaimg.cn/mw690/a9983fa7ly1fototjt0u3j206n02wdfm.jpg" alt="human"></li>
 </ul>
 <ul>
-<li>跟该主题相关的配置在<code>themes/hueman/_config.yml</code>里面,然后根据你的需要在这配配配就行了。<br>![<a href="http://wx2.sinaimg.cn/mw690/a9983fa7ly1fototk95zvj206i07rt8m.jpg][17]" target="_blank" rel="noopener">http://wx2.sinaimg.cn/mw690/a9983fa7ly1fototk95zvj206i07rt8m.jpg][17]</a></li>
+<li>跟该主题相关的配置在<code>themes/hueman/_config.yml</code>里面,然后根据你的需要在这配配配就行了。<br><img src="http://wx2.sinaimg.cn/mw690/a9983fa7ly1fototk95zvj206i07rt8m.jpg" alt="themes"></li>
 </ul>
 <ul>
 <li>有的东西我也不知道是啥玩意儿，你要多试多倒腾几次，就能意会啦</li>
