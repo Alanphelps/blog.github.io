@@ -214,10 +214,18 @@
 <li>一步之遥</li>
 </ol>
 <ul>
-<li><p>用编辑器打开你的blog项目，修改_config.yml文件的一些配置(冒号之后都是有一个半角空格的)：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https:<span class="comment">//github.com/YourgithubName/YourgithubName.github.io.git</span></span><br><span class="line">  branch: master</span><br><span class="line">``` </span><br><span class="line">- 回到gitbash中，进入你的blog目录，分别执行以下命令：</span><br><span class="line"></span><br><span class="line">``` cpp</span><br><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo server</span><br></pre></td></tr></table></figure>
-<p>注：hexo 3.0把服务器独立成个别模块，需要单独安装：<code>npm i hexo-server</code></p>
+<li>用编辑器打开你的blog项目，修改_config.yml文件的一些配置(冒号之后都是有一个半角空格的)：<pre><code class="javascript">$(<span class="built_in">document</span>).ready(<span class="function"><span class="keyword">function</span>(<span class="params"> deploy:</span></span>
+<span class="function"><span class="params">type: git</span></span>
+<span class="function"><span class="params">repo: https:<span class="regexp">//gi</span>thub.com<span class="regexp">/YourgithubName/</span>YourgithubName.github.io.git</span></span>
+<span class="function"><span class="params">branch: master</span>)</span>
+</code></pre>
 </li>
+<li>回到gitbash中，进入你的blog目录，分别执行以下命令：</li>
+</ul>
+<p><code>function_name(hexo clean
+hexo generate
+hexo server)</code><br>  注：hexo 3.0把服务器独立成个别模块，需要单独安装：<code>npm i hexo-server</code></p>
+<ul>
 <li>打开浏览器输入：<code>http://localhost:4000</code></li>
 <li>接着你就可以遇见天使的微笑了~</li>
 </ul>
@@ -228,7 +236,9 @@
 <li>先安装一波：<code>npm install hexo-deployer-git --save</code>（这样才能将你写好的文章部署到github服务器上并让别人浏览到）</li>
 <li>执行命令(建议每次都按照如下步骤部署)：</li>
 </ul>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p><code>function_name(hexo clean
+hexo generate
+hexo deploy)</code></p>
 <p>  注意deploy的过程中要输入你的username及passward。如下：<br><img src="http://wx1.sinaimg.cn/mw690/a9983fa7ly1fotojms2s2j20i103wwee.jpg" alt="deploy"></p>
 <ul>
 <li>在浏览器中输入<code>http://yourgithubname.github.io</code>就可以看到你的个人博客啦，是不是很兴奋！</li>
@@ -254,7 +264,8 @@
 <li>先安装rss相关插件：<code>npm install hexo-generator-feed --save</code></li>
 <li>在你的项目的_config.yml配置文件下找到Extensions添加如下内容：</li>
 </ul>
-<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"># Extensions</span><br><span class="line">## Plugins: https:<span class="comment">//hexo.io/plugins/</span></span><br><span class="line">## Themes: https:<span class="comment">//hexo.io/themes/</span></span><br><span class="line"># RSS订阅</span><br><span class="line">feed:</span><br><span class="line">  type: rss2</span><br><span class="line">  path: rss2.xml</span><br><span class="line">  limit: <span class="number">5</span></span><br><span class="line">  hub: </span><br><span class="line">  content: 'true'</span><br></pre></td></tr></table></figure>
+<p>`function_name(## Plugins: <a href="https://hexo.io/plugins/" target="_blank" rel="noopener">https://hexo.io/plugins/</a></p>
+<h2 id="Themes-https-hexo-io-themes"><a href="#Themes-https-hexo-io-themes" class="headerlink" title="Themes: https://hexo.io/themes/"></a>Themes: <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a></h2><h1 id="RSS订阅"><a href="#RSS订阅" class="headerlink" title="RSS订阅"></a>RSS订阅</h1><p>feed:<br>  type: rss2<br>  path: rss2.xml<br>  limit: 5<br>  hub:<br>  content: ‘true’)`</p>
 <ul>
 <li>进入到你的主题的配置文件下，找到你的放rss的位置，添加<code>rss2.xml</code>即可。</li>
 <li>重新部署再打开就能看到效果啦~</li>
