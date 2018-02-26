@@ -156,7 +156,7 @@
 <li>[下载地址][1]</li>
 <li>安装步骤：双击下载好的exe文件，一路next就好啦</li>
 <li>安装好后，打开gitbash，查看版本：<ul>
-<li>命令：<code>git version</code> (写这篇博客的时候最新版本：2.12.6)<br><img src="“http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotnzdervtj207v01dgle.jpg”" alt="“git -v”"></li>
+<li>命令：<code>git version</code> (写这篇博客的时候最新版本：2.12.6)<br><img src="http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotnzdervtj207v01dgle.jpg" alt="git -v"></li>
 </ul>
 </li>
 <li>然后你就可以在这里发挥你的聪明才智了</li>
@@ -169,7 +169,7 @@
 <li>[下载地址]<a href="说明：LTS为长期支持版，Current为当前最新版">3</a></li>
 <li>安装步骤：反正下载好msi文件后，双击打开安装，也是一路next，不过在Custom Setup这一步记得选 <code>Add to PATH</code> ,这样你就不用自己去配置电脑上环境变量了，装完在按 <code>win + r</code> 快捷键调出运行，然后输入cmd确定，在cmd中输入path可以看到你的node是否配置在里面（环境变量），没有的话你就自由发挥吧。</li>
 <li>查看版本：<ul>
-<li>命令：<code>node -v</code><br>![<a href="http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto19wrooj207n010mwx.jpg][4]" target="_blank" rel="noopener">http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto19wrooj207n010mwx.jpg][4]</a></li>
+<li>命令：<code>node -v</code><br>![node -v]（<a href="http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto19wrooj207n010mwx.jpg" target="_blank" rel="noopener">http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto19wrooj207n010mwx.jpg</a>)</li>
 </ul>
 </li>
 <li>又到自由发挥的时候了</li>
@@ -181,8 +181,8 @@
 <ul>
 <li>先创建一个文件夹（用来存放所有blog的东西），然后<code>cd</code>到该文件夹下。</li>
 <li>安装hexo命令：<code>npm i -g hexo</code></li>
-<li>安装完成后，查看版本：<code>hexo -v</code><br>![<a href="http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto45he9hj2097080mx7.jpg][5]" target="_blank" rel="noopener">http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto45he9hj2097080mx7.jpg][5]</a></li>
-<li>初始化命令：<code>hexo init</code>，初始化完成之后打开所在的文件夹可以看到以下文件：<br>![<a href="http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto7x79fnj20d604xjr9.jpg][6]" target="_blank" rel="noopener">http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto7x79fnj20d604xjr9.jpg][6]</a></li>
+<li>安装完成后，查看版本：<code>hexo -v</code><br><img src="http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto45he9hj2097080mx7.jpg" alt="hexo -v"></li>
+<li>初始化命令：<code>hexo init</code>，初始化完成之后打开所在的文件夹可以看到以下文件：<br><img src="http://wx4.sinaimg.cn/mw690/a9983fa7ly1foto7x79fnj20d604xjr9.jpg" alt="hexo init"></li>
 <li>解释一下：<ul>
 <li>node_modules：是依赖包</li>
 <li>public：存放的是生成的页面</li>
@@ -200,10 +200,13 @@
 <li>搭桥到github</li>
 </ol>
 <ul>
-<li>没账号的创建账号，有账号的看下面。<ul>
-<li>创建一个repo，名称为<code>yourname.github.io</code>, 其中yourname是你的github名称，按照这个规则创建才有用哦，如下：<br>![<a href="http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotoch7r12j20bi06v0sp.jpg][7]" target="_blank" rel="noopener">http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotoch7r12j20bi06v0sp.jpg][7]</a><br>![<a href="http://wx2.sinaimg.cn/mw690/a9983fa7ly1fotochvax7j20op0gljsk.jpg][8]" target="_blank" rel="noopener">http://wx2.sinaimg.cn/mw690/a9983fa7ly1fotochvax7j20op0gljsk.jpg][8]</a></li>
-<li>回到gitbash中，配置github账户信息（YourName和YourEail都替换成你自己GitHub账户的信息）：<br>![<a href="http://wx4.sinaimg.cn/mw690/a9983fa7ly1fotofvtf7cj20af02f0sk.jpg][9]" target="_blank" rel="noopener">http://wx4.sinaimg.cn/mw690/a9983fa7ly1fotofvtf7cj20af02f0sk.jpg][9]</a><br>![<a href="http://wx1.sinaimg.cn/mw690/a9983fa7ly1fotoga7z7tj20aj02a0sk.jpg][10]" target="_blank" rel="noopener">http://wx1.sinaimg.cn/mw690/a9983fa7ly1fotoga7z7tj20aj02a0sk.jpg][10]</a></li>
-<li>创建SSH<br> 在gitbash中输入：<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code>，生成ssh。然后按下图的方式找到<code>id_rsa.pub</code>文件的内容。<br>![<a href="http://wx4.sinaimg.cn/mw690/a9983fa7ly1fotojl94cxj20ir05h0sr.jpg][11]" target="_blank" rel="noopener">http://wx4.sinaimg.cn/mw690/a9983fa7ly1fotojl94cxj20ir05h0sr.jpg][11]</a></li>
+<li><p>没账号的创建账号，有账号的看下面。</p>
+<ul>
+<li>创建一个repo，名称为<code>yourname.github.io</code>, 其中yourname是你的github名称，按照这个规则创建才有用哦，如下：<br><img src="http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotoch7r12j20bi06v0sp.jpg" alt="repo"><br><img src="http://wx2.sinaimg.cn/mw690/a9983fa7ly1fotochvax7j20op0gljsk.jpg" alt="yourname"></li>
+<li><p>回到gitbash中，配置github账户信息（YourName和YourEail都替换成你自己GitHub账户的信息）：</p>
+</li>
+<li><p>创建SSH<br> 在gitbash中输入：<code>ssh-keygen -t rsa -C &quot;youremail@example.com&quot;</code>，生成ssh。然后按下图的方式找到<code>id_rsa.pub</code>文件的内容。<br>![<a href="http://wx4.sinaimg.cn/mw690/a9983fa7ly1fotojl94cxj20ir05h0sr.jpg][11]" target="_blank" rel="noopener">http://wx4.sinaimg.cn/mw690/a9983fa7ly1fotojl94cxj20ir05h0sr.jpg][11]</a></p>
+</li>
 <li>将上面获取的ssh放到github中：<br>![<a href="http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotojlpzbcj206e094q2u.jpg][12]" target="_blank" rel="noopener">http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotojlpzbcj206e094q2u.jpg][12]</a><br>![<a href="http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotojm4yjzj20so0avmxg.jpg][13]" target="_blank" rel="noopener">http://wx3.sinaimg.cn/mw690/a9983fa7ly1fotojm4yjzj20so0avmxg.jpg][13]</a><br>添加一个 <code>New SSH key</code> ，title随便取，key就填刚刚那一段。</li>
 <li>在gitbash中验证是否添加成功：<code>ssh -T git@github.com</code></li>
 <li>完成下一步你就成功啦！</li>
