@@ -8,8 +8,20 @@
     <atom:link href="/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>一个从0开始的小站，一点点积累.</description>
-    <pubDate>Wed, 28 Feb 2018 01:33:32 GMT</pubDate>
+    <pubDate>Wed, 28 Feb 2018 02:35:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>GGitHubPages绑定个人域名</title>
+      <link>http://vave.men/2018/02/28/GitHubPages%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/</link>
+      <guid>http://vave.men/2018/02/28/GitHubPages%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/</guid>
+      <pubDate>Wed, 28 Feb 2018 02:35:51 GMT</pubDate>
+      <description>
+      
+      </description>
+      
+      <comments>http://vave.men/2018/02/28/GitHubPages%E7%BB%91%E5%AE%9A%E4%B8%AA%E4%BA%BA%E5%9F%9F%E5%90%8D/#disqus_thread</comments>
+    </item>
     
     <item>
       <title>hexo从零开始到搭建完整</title>
