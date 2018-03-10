@@ -78,7 +78,14 @@
   
 </head>
 <body>
-
+<script>AV.init({appId:'l59rJcfb2RRLVEAAPVOPHGjt-gzGzoHsz',appKey:'tDOqBadSUa2JMRpt32X3dNIw'});</script>
+<script type="text/javascript">
+      var config = {
+            ClasS: 'Counter',
+            el:'.views',
+            elP: '.views-post'
+      }
+</script>
 <div class="container">
     <div class="row blog-box-shadow">
         <!--博客主栏开始-->
@@ -263,14 +270,11 @@
       otherF();
     });
 </script>
-<script type="text/javascript">
-AV.init({appId:'l59rJcfb2RRLVEAAPVOPHGjt-gzGzoHsz',appKey:'tDOqBadSUa2JMRpt32X3dNIw'});
-      var config = {
-            ClasS: 'Counter',
-            el:'.views',
-            elP: '.views-post'
-      }
- function showTime(Counter) {
+
+
+<script>
+    // 显示次数
+    function showTime(Counter) {
         var query = new AV.Query("Counter");
         if($(".leancloud_visitors").length > 0){
             var url = $(".leancloud_visitors").attr('id').trim();
@@ -299,7 +303,8 @@ AV.init({appId:'l59rJcfb2RRLVEAAPVOPHGjt-gzGzoHsz',appKey:'tDOqBadSUa2JMRpt32X3d
         var Counter = AV.Object.extend("Counter");
         addCount(Counter);
         showTime(Counter);
-    });     
+    });
 </script>
+
 </body>
 </html>
